@@ -1,0 +1,21 @@
+{
+    "name": "login-mrgf",
+    "version": "1.0.0",
+    "description": "MARYLISE & REMBO STYLING & CARTA BRANCA | Order Management System",
+    "scripts": {
+        "build": "parcel build src/index.html --no-source-maps --dist-dir output --public-url ./",
+        "dev": "parcel serve src/index.html",
+        "start": "npm run build && npm run dev"
+    },
+    "author": "koztaa.com",
+    "license": "ISC",
+    "devDependencies": {
+        "@parcel/transformer-sass": "^2.7.0",
+        "parcel": "^2.7.0"
+    },
+    "dependencies": {
+        "@popperjs/core": "^2.11.6",
+        "bootstrap": "^5.2.1",
+        "bootstrap-icons": "^1.9.1"
+    }
+}

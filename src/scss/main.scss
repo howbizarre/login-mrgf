@@ -1,3 +1,19 @@
+/************************************************************************************************************************** Media */
+
+@media (min-width: 576px) {
+    :root {
+        --slide-up-y: 272px;
+    }
+}
+
+@media (max-width: 575px) {
+    :root {
+        --slide-up-y: 522px;
+    }
+}
+
+/************************************************************************************************************************** Basis */
+
 body,
 html {
     background-color: #efecea;
@@ -7,7 +23,15 @@ html {
     background-position: center right;
     width: 100%;
     height: 100%;
-    min-height: 545px;
+    min-height: 522px;
+}
+
+#shell {
+    position: absolute;
+    height: var(--slide-up-y);
+
+    animation: 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.85s 1 normal both running visin;
+    -webkit-animation: 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.85s 1 normal both running visin;
 }
 
 .login-card {
@@ -60,25 +84,12 @@ html {
 
     .form-card {
         position: absolute;
+        min-width: 290px;
     }
 
     .form-controls {
         animation: 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.85s 1 normal both running hidout;
         -webkit-animation: 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.85s 1 normal both running hidout;
-    }
-}
-
-/************************************************************************************************************************** Media */
-
-@media (min-width: 576px) {
-    :root {
-        --slide-up-y: 250px;
-    }
-}
-
-@media (max-width: 576px) {
-    :root {
-        --slide-up-y: 100px;
     }
 }
 
@@ -125,33 +136,43 @@ html {
 @-webkit-keyframes visable {
     0% {
         background-color: #ffffff00;
+        box-shadow: 0 0 25px #00000000;
+    }
+    50% {
+        box-shadow: 0 0 25px #00000000;
     }
     100% {
         background-color: #ffffffdf;
+        box-shadow: 0 0 25px #00000050;
     }
 }
 @keyframes visable {
     0% {
         background-color: #ffffff00;
+        box-shadow: 0 0 25px #00000000;
+    }
+    50% {
+        box-shadow: 0 0 25px #00000000;
     }
     100% {
         background-color: #ffffffdf;
+        box-shadow: 0 0 25px #00000050;
     }
 }
 
 @-webkit-keyframes visin {
     0% {
-        top: -50%;
+        top: 10%;
     }
     100% {
-        top: 0;
+        top: calc(50% - (var(--slide-up-y) / 2));
     }
 }
 @keyframes visin {
     0% {
-        top: -50%;
+        top: 10%;
     }
     100% {
-        top: 0;
+        top: calc(50% - (var(--slide-up-y) / 2));
     }
 }

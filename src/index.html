@@ -23,14 +23,14 @@
 </head>
 
 <body>
-    <div class="pic-wrapper">
+    <div class="pic-wrapper" style="z-index:0">
         <figure class="pic pic-1"></figure>
         <figure class="pic pic-2"></figure>
         <figure class="pic pic-3"></figure>
         <figure class="pic pic-4"></figure>
     </div>
 
-    <section id="shell">
+    <main id="shell">
         <div class="container-fluid ps-0 form-container">
             <div class="card mb-3 rounded-0 border-0 login-card">
                 <div class="row g-0">
@@ -75,9 +75,20 @@
                 </div>
             </div>
         </div>
-    </section>
+    </main>
 
-    <script type="module" src="js/main.js"></script>
+    <footer id="footer" data-bs-toggle="tooltip" data-bs-title="Made to Measure powered by GenCloud's Bizzio">
+        <a href="https://gencloud.bg/en" title="GenCloud | ERP, CRM and eCommerce software" class="powered-by" target="_blank" rel="noopener noreferrer">
+            <img src="./img/gencloud_bizzio.png" alt="GenCloud | ERP, CRM and eCommerce software" />
+        </a>
+    </footer>
+
+    <script type="module">
+        import * as bootstrap from 'bootstrap';
+
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+    </script>
 </body>
 
 </html>

@@ -97,6 +97,18 @@ html {
     }
 }
 
+#footer {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+
+    .powered-by {
+        background-color: #ffffff3c;
+        display: block;
+        border-radius: 50%;
+    }
+}
+
 /************************************************************************************************************************** Animation */
 
 @-webkit-keyframes slide-right {

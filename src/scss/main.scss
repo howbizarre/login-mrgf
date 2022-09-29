@@ -16,11 +16,6 @@
 
 body,
 html {
-    background-color: #efecea;
-    background-image: url("../img/init-bg.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center right;
     width: 100%;
     height: 100%;
     min-height: 522px;
@@ -35,6 +30,9 @@ html {
 }
 
 .login-card {
+    position: absolute;
+    min-width: 290px;
+
     max-width: 640px;
     width: calc(100vw - 50px);
 
@@ -74,6 +72,17 @@ html {
     border-bottom: 1px solid #c0c0c0 !important;
 }
 
+.form-submit-action {
+    color: #000;
+    background: linear-gradient(111deg, #fefefe 85%, #efecea 85%);
+
+    &:hover,
+    &:focus {
+        color: #fff;
+        background: linear-gradient(111deg, #000000 85%, #757575 85%);
+    }
+}
+
 .form-control:focus {
     box-shadow: none;
 }
@@ -81,11 +90,6 @@ html {
 .form-container {
     min-height: 250px;
     position: relative;
-
-    .form-card {
-        position: absolute;
-        min-width: 290px;
-    }
 
     .form-controls {
         animation: 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.85s 1 normal both running hidout;
@@ -138,11 +142,11 @@ html {
         background-color: #ffffff00;
         box-shadow: 0 0 25px #00000000;
     }
-    50% {
+    95% {
         box-shadow: 0 0 25px #00000000;
     }
     100% {
-        background-color: #ffffffdf;
+        background: linear-gradient(111deg, #fefefe 65%, #efecea 65%);
         box-shadow: 0 0 25px #00000050;
     }
 }
@@ -151,11 +155,11 @@ html {
         background-color: #ffffff00;
         box-shadow: 0 0 25px #00000000;
     }
-    50% {
+    95% {
         box-shadow: 0 0 25px #00000000;
     }
     100% {
-        background-color: #ffffffdf;
+        background: linear-gradient(111deg, #fefefe 65%, #efecea 65%);
         box-shadow: 0 0 25px #00000050;
     }
 }

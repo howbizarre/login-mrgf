@@ -109,6 +109,11 @@ html {
     }
 }
 
+.bizzio-tooltip {
+    font-size: 0.625em;
+    border-radius: 0;
+}
+
 /************************************************************************************************************************** Animation */
 
 @-webkit-keyframes slide-right {
@@ -151,11 +156,15 @@ html {
 
 @-webkit-keyframes visable {
     0% {
-        background-color: #ffffff00;
-        box-shadow: 0 0 25px #00000000;
+        background: none;
+        box-shadow: none;
+    }
+    50% {
+        background: none;
+        box-shadow: none;
     }
     95% {
-        box-shadow: 0 0 25px #00000000;
+        box-shadow: none;
     }
     100% {
         background: linear-gradient(111deg, #fefefe 65%, #efecea 65%);
@@ -164,11 +173,15 @@ html {
 }
 @keyframes visable {
     0% {
-        background-color: #ffffff00;
-        box-shadow: 0 0 25px #00000000;
+        background: none;
+        box-shadow: none;
+    }
+    50% {
+        background: none;
+        box-shadow: none;
     }
     95% {
-        box-shadow: 0 0 25px #00000000;
+        box-shadow: none;
     }
     100% {
         background: linear-gradient(111deg, #fefefe 65%, #efecea 65%);

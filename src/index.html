@@ -23,11 +23,11 @@
 </head>
 
 <body>
-    <div class="pic-wrapper" style="z-index:0">
-        <figure class="pic pic-1"></figure>
-        <figure class="pic pic-2"></figure>
-        <figure class="pic pic-3"></figure>
-        <figure class="pic pic-4"></figure>
+    <div class="background-images">
+        <figure class="background-image background-image--1"></figure>
+        <figure class="background-image background-image--2"></figure>
+        <figure class="background-image background-image--3"></figure>
+        <figure class="background-image background-image--4"></figure>
     </div>
 
     <main id="shell">
@@ -45,7 +45,7 @@
                             <img src="img/Carta-Branca_black.svg" class="img-fluid brand-logo" alt="Carta Branca" />
                         </a>
                     </div>
-                    <div class="col-sm-6 p-3 form-container">
+                    <div class="col-sm-6 p-3">
                         <div class="card-body h-100 d-block form-controls">
                             <div class="d-flex align-items-end flex-column h-100">
                                 <div class="input-group mb-2">
@@ -84,10 +84,10 @@
     </footer>
 
     <script type="module">
-        import * as bootstrap from 'bootstrap';
+        import { Tooltip } from 'bootstrap';
 
         const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
-        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new Tooltip(tooltipTriggerEl));
     </script>
 </body>
 

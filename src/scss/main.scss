@@ -8,7 +8,7 @@
 
 @media (max-width: 575px) {
     :root {
-        --slide-up-y: 522px;
+        --slide-up-y: 526px;
     }
 }
 
@@ -18,7 +18,7 @@ body,
 html {
     width: 100%;
     height: 100%;
-    min-height: 522px;
+    min-height: 560px;
 }
 
 #shell {
@@ -27,6 +27,18 @@ html {
 
     animation: 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.85s 1 normal both running visin;
     -webkit-animation: 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.85s 1 normal both running visin;
+}
+
+.form-container {
+    min-height: var(--slide-up-y);
+    position: relative;
+
+    .form-controls {
+        min-height: 222px;
+
+        animation: 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.85s 1 normal both running hidout;
+        -webkit-animation: 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.85s 1 normal both running hidout;
+    }
 }
 
 .login-card {
@@ -57,10 +69,10 @@ html {
     &.brand-link--third {
         animation-delay: 0.85s;
     }
-}
 
-.brand-logo {
-    max-width: 200px;
+    .brand-logo {
+        max-width: 200px;
+    }
 }
 
 .login-form-input {
@@ -85,16 +97,6 @@ html {
 
 .form-control:focus {
     box-shadow: none;
-}
-
-.form-container {
-    min-height: 250px;
-    position: relative;
-
-    .form-controls {
-        animation: 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.85s 1 normal both running hidout;
-        -webkit-animation: 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.85s 1 normal both running hidout;
-    }
 }
 
 #footer {

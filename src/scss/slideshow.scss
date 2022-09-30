@@ -1,13 +1,14 @@
 /************************************************************************************************************************** Basis */
 
-.pic-wrapper {
+.background-images {
     position: absolute;
     width: 100%;
     height: 100%;
     overflow: hidden;
+    z-index: 0;
 }
 
-.pic {
+.background-image {
     position: absolute;
     top: 0;
     left: 0;
@@ -29,12 +30,12 @@
     background-repeat: no-repeat;
     background-position: center center;
 
-    &.pic-1 {
+    &.background-image--1 {
         opacity: 1;
         background-image: url(../img/slides/IMG.2022.1.jpg);
     }
 
-    &.pic-2 {
+    &.background-image--2 {
         animation-delay: 6s;
         -o-animation-delay: 6s;
         -moz--animation-delay: 6s;
@@ -42,7 +43,7 @@
         background-image: url(../img/slides/IMG.2022.2.jpg);
     }
 
-    &.pic-3 {
+    &.background-image--3 {
         animation-delay: 12s;
         -o-animation-delay: 12s;
         -moz--animation-delay: 12s;
@@ -50,7 +51,7 @@
         background-image: url(../img/slides/IMG.2022.3.jpg);
     }
 
-    &.pic-4 {
+    &.background-image--4 {
         animation-delay: 18s;
         -o-animation-delay: 18s;
         -moz--animation-delay: 18s;

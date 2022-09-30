@@ -86,7 +86,7 @@ html {
 
 .form-submit-action {
     color: #000;
-    background: linear-gradient(111deg, #fefefe 85%, #efecea 85%);
+    background: linear-gradient(111deg, #efeceaf0 85%, #fefefe 85%);
 
     &:hover,
     &:focus {
@@ -169,7 +169,7 @@ html {
         box-shadow: none;
     }
     100% {
-        background: linear-gradient(111deg, #fefefe 65%, #efecea 65%);
+        background: linear-gradient(111deg, #fefefecc 65%, #efeceaf0 65%);
         box-shadow: 0 0 25px #00000050;
     }
 }
@@ -186,7 +186,7 @@ html {
         box-shadow: none;
     }
     100% {
-        background: linear-gradient(111deg, #fefefe 65%, #efecea 65%);
+        background: linear-gradient(111deg, #fefefecc 65%, #efeceaf0 65%);
         box-shadow: 0 0 25px #00000050;
     }
 }
